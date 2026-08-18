@@ -1,0 +1,53 @@
+====================================================
+ ExtrairSQLs - Extração automática de SQLs do BIMachine
+====================================================
+
+O QUE ESSA FERRAMENTA FAZ
+--------------------------
+Ela abre o BIMachine no seu navegador (você vai ver a tela funcionando
+sozinha, como se fosse um robô clicando) e copia o SQL de cada consulta
+configurada num projeto, salvando um arquivo .sql para cada uma.
+
+Isso substitui o processo manual de entrar em cada consulta e copiar o
+SQL uma por uma.
+
+IMPORTANTE: A ferramenta é SOMENTE LEITURA. Ela nunca digita, nunca
+altera nada e nunca clica em "Salvar" dentro do BIMachine. Só lê o que
+já esta configurado.
+
+
+COMO USAR
+---------
+1. Va na pasta "ExtrairSQLs" e de dois cliques em "ExtrairSQLs.exe".
+
+2. Vai abrir uma janela preta (o terminal) com perguntas. Responda
+   uma de cada vez e aperte Enter:
+
+   - E-mail e senha do BIMACHINE (SEU login pessoal - não pode usar o
+     login de outra pessoa). Só pede isso na PRIMEIRA vez que você usa
+     a ferramenta nessa maquina, das próximas vezes já fica salvo.
+
+   - Nome do projeto (cliente) - digite EXATAMENTE como aparece no
+     menu "Projetos" dentro do BIMachine.
+
+   - Se quer extrair "Dados", "Analítica", ou os dois.
+
+3. Um navegador vai abrir sozinho e começar a trabalhar. NÃO FECHE
+   essa janela do navegador enquanto estiver rodando - mas pode
+   minimizar ela e usar o computador normalmente enquanto isso.
+
+4. Se em algum momento pedir um CODIGO DE VERIFICAÇÃO (2FA) que chega
+   no seu e-mail, digite o código na tela do navegador e depois volte
+   na janela preta e aperte Enter para continuar.
+
+5. No final, aparece um resumo de quantas consultas foram extraídas
+   com sucesso. Os arquivos .sql ficam dentro da pasta "output",
+   organizados por ano e mês da exportação, nome do projeto e por tipo (Dados / Analítica).
+
+
+SE ALGO DER ERRADO
+-------------------
+- Se aparecer "ERRO: projeto não encontrado", confira se digitou o
+  nome do projeto exatamente igual ao que aparece no BIMachine.
+- Se travar ou algo parecer estranho, pode fechar a janela preta e
+  tentar rodar de novo.

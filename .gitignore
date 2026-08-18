@@ -1,0 +1,13 @@
+venv/
+__pycache__/
+*.pyc
+config.env
+output/
+*.sql
+auth.json
+*.auth.json
+browser_profile/
+codegen_output*.py
+build/
+dist/
+*.spec
